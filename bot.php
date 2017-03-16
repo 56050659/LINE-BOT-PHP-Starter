@@ -69,7 +69,7 @@ if (!is_null($events['events'])) {
 							"อุณหภูมิ : " . $temp1 . "Celcius" . "\r\n" .
 							"สภาพอากาศ : " . $weather1 . "\r\n" .
                             "ความกดอากาศ: " . $pressure1 . " pha" . "\r\n" .
-							"ความชื้นของดิน : " . $humidity . " %" . "\r\n"
+							"ความชื้นของอากาศ : " . $humidity . " %" . "\r\n"
             ];
 
 
