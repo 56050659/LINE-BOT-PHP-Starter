@@ -66,6 +66,11 @@ if (!is_null($events['events'])) {
                             "ความกดอากาศ: " . $pressure1 . " pha" . "\r\n" .
 							"ความชื้นของอากาศ : " . $humidity . " %" . "\r\n"
             ];
+			$picture = [
+				"type" => "image",
+				"originalContentUrl" => "https://i.imgur.com/6gTAAyY.jpg",
+				"previewImageUrl" => "https://i.imgur.com/6gTAAyY.jpg"
+			];
 
 
             if($event['message']['text'] == "hello"){
@@ -86,7 +91,8 @@ if (!is_null($events['events'])) {
             $data = [
                 'replyToken' => $replyToken,
                 //'messages' => [$message1,$message2],
-                'messages' => $bufferMessage,
+                'messages' => [$bufferMessage,$picture],
+				
             ];
             $post = json_encode($data);
             $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
