@@ -42,15 +42,15 @@ if (!is_null($events['events'])) {
 			$temp1 = $dataDecode[0][1];
             $temp2 = $dataDecode[1][1];
             $temp3 = $dataDecode[2][1];
-            //$temp4 = $dataDecode[3][1];
-            //$temp5 = $dataDecode[4][1];
+            $temp4 = $dataDecode[3][1];
+            $temp5 = $dataDecode[4][1];
 			
 			//date
 			$date1 = $dataDecode[0][2];
             $date2 = $dataDecode[1][2];
             $date3 = $dataDecode[2][2];
-            //$date4 = $dataDecode[3][2];
-            //$date5 = $dataDecode[4][2];
+            $date4 = $dataDecode[3][2];
+            $date5 = $dataDecode[4][2];
             
 			
 			//weather
@@ -94,8 +94,8 @@ if (!is_null($events['events'])) {
                 'text' =>   $date1 . ' : ' . $temp1 . ' องศาเซลเซียส' . "\r\n" .
                             $date2 . ' : ' . $temp2 . ' องศาเซลเซียส' . "\r\n" .
                             $date3 . ' : ' . $temp3 . ' องศาเซลเซียส' . "\r\n" .
-                            //$date4 . ' : ' . $temp4 . ' องศาเซลเซียส' . "\r\n" .
-                            //$date5 . ' : ' . $temp5 . ' องศาเซลเซียส' . "\r\n"
+                            $date4 . ' : ' . $temp4 . ' องศาเซลเซียส' . "\r\n" .
+                            $date5 . ' : ' . $temp5 . ' องศาเซลเซียส' . "\r\n"
             ];
 
 
