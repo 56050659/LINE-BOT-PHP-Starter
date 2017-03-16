@@ -51,12 +51,11 @@ if (!is_null($events['events'])) {
                 'text' => 'ตรวจงานอยู่'
             ];
 
-            $message4 = [
-				'type' => 'text',
-                 'type' => 'image'
-                 'originalContentUrl' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg/220px-Ash_Tree_-_geograph.org.uk_-_590710.jpg',
-                 'previewImageUrl' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg/220px-Ash_Tree_-_geograph.org.uk_-_590710.jpg'
-             ];
+            // $message4 = [
+             //    'type' => 'image',
+            //     'originalContentUrl' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg/220px-Ash_Tree_-_geograph.org.uk_-_590710.jpg',
+            //     'previewImageUrl' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg/220px-Ash_Tree_-_geograph.org.uk_-_590710.jpg'
+            // ];
 
             $message3 = [
                 'type' => 'text',
@@ -78,9 +77,9 @@ if (!is_null($events['events'])) {
             if($event['message']['text'] == "อากาศ"){
                 $bufferMessage[0] = $message3;
             }
-			if($event['message']['text'] == "อากาศดี"){
-               $bufferMessage[0] = $message4;
-            }
+			//if($event['message']['text'] == "อากาศดี"){
+            //   $bufferMessage[0] = $message4;
+            //}
 
 
             // Make a POST Request to Messaging API to reply to sender
