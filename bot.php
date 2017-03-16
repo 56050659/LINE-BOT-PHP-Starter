@@ -61,8 +61,8 @@ if (!is_null($events['events'])) {
             $message3 = [
                 'type' => 'text',
                 'text' =>   $temp1  . "\r\n" .
-							$date1 . //' องศาเซลเซียส' . "\r\n" .
-							$weather1 . ' องศาเซลเซียส' . "\r\n" .
+							$date1 . "\r\n" .
+							$weather1 . "\r\n" .
                             //$weather1 . "\r\n" .
 							$pressure1."\r\n"
             ];
