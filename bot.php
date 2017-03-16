@@ -51,10 +51,10 @@ if (!is_null($events['events'])) {
                 'text' => 'ตรวจงานอยู่'
             ];
 
-            // $message3 = [
+            // $message4 = [
             //     'type' => 'image',
-            //     'originalContentUrl' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg/220px-Ash_Tree_-_geograph.org.uk_-_590710.jpg',
-            //     'previewImageUrl' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg/220px-Ash_Tree_-_geograph.org.uk_-_590710.jpg'
+            //    'originalContentUrl' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg/220px-Ash_Tree_-_geograph.org.uk_-_590710.jpg',
+            //    'previewImageUrl' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg/220px-Ash_Tree_-_geograph.org.uk_-_590710.jpg'
             // ];
 
             $message3 = [
@@ -62,7 +62,10 @@ if (!is_null($events['events'])) {
                 'text' =>   $temp1  . "\r\n" .
 							$date1 . ' องศาเซลเซียส' . "\r\n" .
 							$weather1 . "\r\n" .
-                            $pressure1."\r\n"
+                            $pressure1."\r\n",
+				'type' => 'image',
+                 'originalContentUrl' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg/220px-Ash_Tree_-_geograph.org.uk_-_590710.jpg',
+                 'previewImageUrl' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg/220px-Ash_Tree_-_geograph.org.uk_-_590710.jpg'			
             ];
 
 
