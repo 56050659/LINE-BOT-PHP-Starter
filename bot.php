@@ -54,14 +54,14 @@ if (!is_null($events['events'])) {
             
 			
 			//weather
-           // $weather1 = $dataDecode[0][3];
+            $weather1 = $dataDecode[0][3];
             //$weather2 = $dataDecode[1][3];
             //$weather3 = $dataDecode[2][3];
             //$weather4 = $dataDecode[3][3];
             //$weather5 = $dataDecode[4][3];
 
             //Air pressure
-            //$pressure1 = $dataDecode[0][4];
+            $pressure1 = $dataDecode[0][4];
             //$pressure2 = $dataDecode[1][4];
             //$pressure3 = $dataDecode[2][4];
             //$pressure4 = $dataDecode[3][4];
@@ -91,11 +91,10 @@ if (!is_null($events['events'])) {
 
             $message3 = [
                 'type' => 'text',
-                'text' =>   $date1 . ' : ' . $temp1 . ' องศาเซลเซียส' . "\r\n" .
-                            $date2 . ' : ' . $temp2 . ' องศาเซลเซียส' . "\r\n" .
-                            $date3 . ' : ' . $temp3 . ' องศาเซลเซียส' . "\r\n" .
-                            $date4 . ' : ' . $temp4 . ' องศาเซลเซียส' . "\r\n" .
-                            $date5 . ' : ' . $temp5 . ' องศาเซลเซียส' . "\r\n"
+                'text' =>   $date1  . "\r\n" .
+							$temp1 . ' องศาเซลเซียส' . "\r\n" .
+                            $weather1 . "\r\n" .
+							$pressure1."\r\n"
             ];
 
 
