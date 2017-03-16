@@ -24,11 +24,11 @@ if (!is_null($events['events'])) {
                         
 
 			//date
-			$date1 = $dataDecode[0][1];
+			$date1 = $dataDecode[0][2];
            		
 												
             //temp
-			$temp1 = $dataDecode[0][2];
+			$temp1 = $dataDecode[0][1];
             
             
 			//weather
