@@ -34,7 +34,7 @@ if (!is_null($events['events'])) {
 //            $date4 = $dataDecode['date4'];
 //            $date5 = $dataDecode['date5'];
 
-            $data = file_get_contents("https://cocobyte.herokuapp.com/que_data");
+            $data = file_get_contents("https://cocobyte.herokuapp.com/weather_data");
             $dataDecode = json_decode($data, true);
             //temp
             $temp1 = $dataDecode[0][1];
