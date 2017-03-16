@@ -17,22 +17,7 @@ if (!is_null($events['events'])) {
             // Get replyToken
             $replyToken = $event['replyToken'];
 
-            //get from api
-//            $data = file_get_contents("https://cocobyte.herokuapp.com/weather_data");
-//            $dataDecode = json_decode($data, true);
-//            //temp
-//            $temp1 = $dataDecode['temp1'];
-//            $temp2 = $dataDecode['temp2'];
-//            $temp3 = $dataDecode['temp3'];
-//            $temp4 = $dataDecode['temp4'];
-//            $temp5 = $dataDecode['temp5'];
-//
-//            //date
-//            $date1 = $dataDecode['date1'];
-//            $date2 = $dataDecode['date2'];
-//            $date3 = $dataDecode['date3'];
-//            $date4 = $dataDecode['date4'];
-//            $date5 = $dataDecode['date5'];
+
 
             $data = file_get_contents("https://cocobyte.herokuapp.com/weather_data");
             $dataDecode = json_decode($data, true);
@@ -92,14 +77,7 @@ if (!is_null($events['events'])) {
             if($event['message']['text'] == "อากาศ"){
                 $bufferMessage[0] = $message3;
             }
-//            if($event['message']['text'] == "ถ่ายรูปให้ดูหน่อย"){
-//                $bufferMessage[0] = $message3;
-//            }
-//            if($event['message']['text'] == "ขอข้อมูลทั้งหมด"){
-//                $bufferMessage[0] = $message1;
-//                $bufferMessage[1] = $message2;
-//                $bufferMessage[2] = $message3;
-//            }
+
 
             // Make a POST Request to Messaging API to reply to sender
             $url = 'https://api.line.me/v2/bot/message/reply';
