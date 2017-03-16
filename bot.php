@@ -36,7 +36,7 @@ if (!is_null($events['events'])) {
             
 
             //Air pressure
-            $pressure1 = $dataDecode[0][3];
+            $pressure1 = $dataDecode[0][4];
             
 						
 
@@ -62,7 +62,7 @@ if (!is_null($events['events'])) {
                 'type' => 'text',
                 'text' =>   $temp1  . "\r\n" .
 							$date1 . //' องศาเซลเซียส' . "\r\n" .
-							$weather1 . 
+							$weather1 . ' องศาเซลเซียส' . "\r\n" .
                             //$weather1 . "\r\n" .
 							$pressure1."\r\n"
             ];
