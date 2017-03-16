@@ -21,25 +21,28 @@ if (!is_null($events['events'])) {
 
             $data = file_get_contents("https://cocobit.herokuapp.com/getapi");
             $dataDecode = json_decode($data, true);
+			
+			
+			$img = $dataDecode[0][5];
                         
 
 			//date
-			$date1 = $dataDecode[4][0];
+			$date1 = $dataDecode[0][0];
 			
 						
 			//temp
-			$temp1 = $dataDecode[4][1];
+			$temp1 = $dataDecode[0][1];
            								
                       
             //weather
-            $weather1 = $dataDecode[4][3];
+            $weather1 = $dataDecode[0][3];
             
 
             //Air pressure
-            $pressure1 = $dataDecode[4][4];
+            $pressure1 = $dataDecode[0][4];
 			
 			//humidity
-            $humidity = $dataDecode[4][2];
+            $humidity = $dataDecode[0][2];
 			
 			
             
@@ -68,8 +71,8 @@ if (!is_null($events['events'])) {
 			];
 			$picture = [
 				'type' => 'image',
-				'originalContentUrl' => 'https://i.imgur.com/6gTAAyY.jpg',
-				'previewImageUrl' => 'https://i.imgur.com/6gTAAyY.jpg'
+				'originalContentUrl' => $img,
+				'previewImageUrl' => $img
 			];
 
 
