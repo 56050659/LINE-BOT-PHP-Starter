@@ -24,21 +24,22 @@ if (!is_null($events['events'])) {
                         
 
 			//date
-			$date1 = $dataDecode[3][1];			
+			$date1 = $dataDecode[3][0];
+			
 						
 			//temp
-			$temp1 = $dataDecode[3][2];
+			$temp1 = $dataDecode[3][1];
            								
                       
             //weather
-            $weather1 = $dataDecode[3][4];
+            $weather1 = $dataDecode[3][3];
             
 
             //Air pressure
-            $pressure1 = $dataDecode[3][5];
+            $pressure1 = $dataDecode[3][4];
 			
 			//humidity
-            $humidity = $dataDecode[3][3];
+            $humidity = $dataDecode[3][2];
 			
 			
             
@@ -64,11 +65,11 @@ if (!is_null($events['events'])) {
 
             $message3 = [
                 'type' => 'text',
-                'text' =>   $date1 . "\r\n" .
-							$temp1 . "\r\n" .
-							$weather1 . "\r\n" .
-                            $pressure1 . "\r\n" .
-							$humidity . "\r\n"
+                'text' =>   "Date " . $date1 . "\r\n" .
+							"อุณหภูมิ : " . $temp1 . "Celcius" . "\r\n" .
+							"สภาพอากาศ : " . $weather1 . "\r\n" .
+                            "ความกดอากาศ: " . $pressure1 . " pha" . "\r\n" .
+							"ความชื้นของดิน : " . $humidity . " %" . "\r\n"
             ];
 
 
