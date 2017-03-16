@@ -19,7 +19,7 @@ if (!is_null($events['events'])) {
 
 
 
-            $data = file_get_contents("https://cocobyte.herokuapp.com/weather_data");
+            $data = file_get_contents("https://cocobit.herokuapp.com/getapi");
             $dataDecode = json_decode($data, true);
                         
 
