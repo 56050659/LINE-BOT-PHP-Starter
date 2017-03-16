@@ -24,21 +24,21 @@ if (!is_null($events['events'])) {
                         
 
 			//date
-			$date1 = $dataDecode[3][0];			
+			$date1 = $dataDecode[3][1];			
 						
 			//temp
-			$temp1 = $dataDecode[3][1];
+			$temp1 = $dataDecode[3][2];
            								
                       
             //weather
-            $weather1 = $dataDecode[3][3];
+            $weather1 = $dataDecode[3][4];
             
 
             //Air pressure
-            $pressure1 = $dataDecode[3][4];
+            $pressure1 = $dataDecode[3][5];
 			
 			//humidity
-            $humidity = $dataDecode[3][2];
+            $humidity = $dataDecode[3][3];
 			
 			
             
