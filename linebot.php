@@ -34,7 +34,7 @@ if (!is_null($events['events'])) {
 //            $date4 = $dataDecode['date4'];
 //            $date5 = $dataDecode['date5'];
 
-            $data = file_get_contents("https://cocobyte.herokuapp.com/que_data");
+            $data = file_get_contents("https://cocobit.herokuapp.com/getdb");
             $dataDecode = json_decode($data, true);
             //date
 			$date1 = $dataDecode[0][1];
@@ -74,8 +74,10 @@ if (!is_null($events['events'])) {
 
             $message3 = [
                 'type' => 'text',
-                'text' =>   $date1 . ' : ' . $temp1 . ' องศาเซลเซียส' . "\r\n" .
-                            
+                'text' =>   $date1  . "\r\n" .
+							$temp1 . ' องศาเซลเซียส' . "\r\n" .
+                            $weather1 . "\r\n" .
+							$pressure1.
             ];
 
 
