@@ -66,17 +66,13 @@ if (!is_null($events['events'])) {
                             "ความกดอากาศ: " . $pressure1 . " pha" . "\r\n" .
 							"ความชื้นของอากาศ : " . $humidity . " %" . "\r\n"
 				
+				
+		   ];
+			$picture = [
 				"type" => "image",
 				"originalContentUrl" => "https://i.imgur.com/6gTAAyY.jpg",
 				"previewImageUrl" => "https://i.imgur.com/6gTAAyY.jpg"
-
-
-		   ];
-			//$picture = [
-			//	"type" => "image",
-			//	"originalContentUrl" => "https://i.imgur.com/6gTAAyY.jpg",
-			//	"previewImageUrl" => "https://i.imgur.com/6gTAAyY.jpg"
-			//];
+			];
 
 
             if($event['message']['text'] == "hello"){
@@ -88,6 +84,7 @@ if (!is_null($events['events'])) {
             }
             if($event['message']['text'] == "อากาศ"){
                 $bufferMessage[0] = $message3;
+				$bufferMessage[1] = $picture;
             }
 			
 
