@@ -65,12 +65,18 @@ if (!is_null($events['events'])) {
 							"สภาพอากาศ : " . $weather1 . "\r\n" .
                             "ความกดอากาศ: " . $pressure1 . " pha" . "\r\n" .
 							"ความชื้นของอากาศ : " . $humidity . " %" . "\r\n"
-            ];
-			$picture = [
+				
 				"type" => "image",
 				"originalContentUrl" => "https://i.imgur.com/6gTAAyY.jpg",
 				"previewImageUrl" => "https://i.imgur.com/6gTAAyY.jpg"
-			];
+
+
+		   ];
+			//$picture = [
+			//	"type" => "image",
+			//	"originalContentUrl" => "https://i.imgur.com/6gTAAyY.jpg",
+			//	"previewImageUrl" => "https://i.imgur.com/6gTAAyY.jpg"
+			//];
 
 
             if($event['message']['text'] == "hello"){
