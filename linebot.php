@@ -36,19 +36,37 @@ if (!is_null($events['events'])) {
 
             $data = file_get_contents("https://cocobyte.herokuapp.com/que_data");
             $dataDecode = json_decode($data, true);
-            //temp
+            //date
             $temp1 = $dataDecode[0][1];
             $temp2 = $dataDecode[1][1];
             $temp3 = $dataDecode[2][1];
             $temp4 = $dataDecode[3][1];
             $temp5 = $dataDecode[4][1];
 
-            //date
+            //temp
             $date1 = $dataDecode[0][2];
             $date2 = $dataDecode[1][2];
             $date3 = $dataDecode[2][2];
             $date4 = $dataDecode[3][2];
             $date5 = $dataDecode[4][2];
+			
+			//weather
+            $temp1 = $dataDecode[0][3];
+            $temp2 = $dataDecode[1][3];
+            $temp3 = $dataDecode[2][3];
+            $temp4 = $dataDecode[3][3];
+            $temp5 = $dataDecode[4][3];
+
+            //Air pressure
+            $date1 = $dataDecode[0][4];
+            $date2 = $dataDecode[1][4];
+            $date3 = $dataDecode[2][4];
+            $date4 = $dataDecode[3][4];
+            $date5 = $dataDecode[4][4];
+			
+			
+			
+			
 
             $bufferMessage = [];
 
@@ -70,7 +88,7 @@ if (!is_null($events['events'])) {
 
             $message3 = [
                 'type' => 'text',
-                'text' =>   $date1 . ' : ' . $temp1 . ' องศาเซลเซียส' . "\r\n" .
+                'text' =>   $date1 . ' : ' . $temp1 . ' %' . "\r\n" .
                             $date2 . ' : ' . $temp2 . ' องศาเซลเซียส' . "\r\n" .
                             $date3 . ' : ' . $temp3 . ' องศาเซลเซียส' . "\r\n" .
                             $date4 . ' : ' . $temp4 . ' องศาเซลเซียส' . "\r\n" .
@@ -85,7 +103,7 @@ if (!is_null($events['events'])) {
             if($event['message']['text'] == "ว่างไหม"){
                 $bufferMessage[0] = $message2;
             }
-            if($event['message']['text'] == "เหนื่อยไหม"){
+            if($event['message']['text'] == "wtf"){
                 $bufferMessage[0] = $message3;
             }
 //            if($event['message']['text'] == "ถ่ายรูปให้ดูหน่อย"){
