@@ -38,38 +38,22 @@ if (!is_null($events['events'])) {
             $dataDecode = json_decode($data, true);
                         
 
-            //temp
-			$temp1 = $dataDecode[0][1];
-            //$temp2 = $dataDecode[1][1];
-            //$temp3 = $dataDecode[2][1];
-            //$temp4 = $dataDecode[3][1];
-            //$temp5 = $dataDecode[4][1];
-			
 			//date
-			$date1 = $dataDecode[0][2];
-            //$date2 = $dataDecode[1][2];
-            //$date3 = $dataDecode[2][2];
-            //$date4 = $dataDecode[3][2];
-            //$date5 = $dataDecode[4][2];
+			$date1 = $dataDecode[0][1];
+           		
+												
+            //temp
+			$temp1 = $dataDecode[0][2];
             
-			
+            
 			//weather
             $weather1 = $dataDecode[0][3];
-            //$weather2 = $dataDecode[1][3];
-            //$weather3 = $dataDecode[2][3];
-            //$weather4 = $dataDecode[3][3];
-            //$weather5 = $dataDecode[4][3];
+            
 
             //Air pressure
             $pressure1 = $dataDecode[0][4];
-            //$pressure2 = $dataDecode[1][4];
-            //$pressure3 = $dataDecode[2][4];
-            //$pressure4 = $dataDecode[3][4];
-            //$pressure5 = $dataDecode[4][4];
-			
-			
-			
-			
+            
+						
 
             $bufferMessage = [];
 
