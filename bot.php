@@ -44,6 +44,9 @@ if (!is_null($events['events'])) {
 			//humidity
             $humidity = $dataDecode[0][2];
 			
+			//humidityd
+            $humidityd = $dataDecode[0][6];
+			
 			
             
 						
@@ -67,7 +70,9 @@ if (!is_null($events['events'])) {
 							"อุณหภูมิ : " . $temp1 . "Celcius" . "\r\n" .
 							"สภาพอากาศ : " . $weather1 . "\r\n" .
                             "ความกดอากาศ: " . $pressure1 . " pha" . "\r\n" .
-							"ความชื้นของอากาศ : " . $humidity . " %" . "\r\n"
+							"ความชื้นของอากาศ : " . $humidity . " %" . "\r\n" .
+							"ความชื้นในดิน : " . $humidityd . " %" . "\r\n"
+							
 			];
 			$picture = [
 				'type' => 'image',
