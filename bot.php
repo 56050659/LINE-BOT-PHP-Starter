@@ -27,7 +27,7 @@ if (!is_null($events['events'])) {
 			
 			
 			
-			$img = $dataDecode2;
+			$img = $dataDecode2[0];
                         
 
 			//date
