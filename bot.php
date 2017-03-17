@@ -23,7 +23,7 @@ if (!is_null($events['events'])) {
             $dataDecode = json_decode($data, true);
 			
 			$data2 = file_get_contents("https://cocobit.herokuapp.com/getpicrpi");
-            $dataDecode2 = json_decode($data, true);
+            $dataDecode2 = json_decode($data2, true);
 			
 			
 			
