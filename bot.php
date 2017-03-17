@@ -22,12 +22,8 @@ if (!is_null($events['events'])) {
             $data = file_get_contents("https://cocobit.herokuapp.com/getapi");
             $dataDecode = json_decode($data, true);
 			
-			$data2 = file_get_contents("https://cocobit.herokuapp.com/getpicrpi");
-            $dataDecode2 = json_decode($data2, true);
 			
-			
-			
-			$img = $dataDecode2[0];
+			$img = $dataDecode[0][5];
                         
 
 			//date
